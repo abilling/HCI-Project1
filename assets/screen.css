@@ -14,7 +14,7 @@ html {
   background: #eb4646;
   color: #f59f8b;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.125em /* 18/16= 1.125 */
+  font-size: 1.125em; /* 18/16= 1.125 */
   line-height: 1.2222em; /* 22/18= 1.222em */
   padding: 1.2222em; /* 22/18= 1.222em */
 }
@@ -22,8 +22,8 @@ h1 {
   font-size: 1.618em; /* 29.124/18= 1.618em */
   line-height: 1.5107814em;/* 44/29.124= 1.5107814em */
 }
-p{
-  font-size: .6180em; /* 11.25/18= 1.222em */
+p {
+  font-size: 0.618em; /* 11.25/18= 1.222em */
   line-height: 1em; /*16.5/18=.916em */
   padding-bottom: 1.2222em; /* 22/18= 1.222em */
 }
@@ -44,8 +44,8 @@ input {
   width: 100%;
 }
 input[type="tel"] {
- margin-bottom: 0.61111111em; /* 11/18 = 0.61111111em */
- background-color: rgba(191,102,63, 1.0);
+  margin-bottom: 0.61111111em; /* 11/18 = 0.61111111em */
+  background-color: rgba(191,102,63, 1.0);
 }
 input[type="tel"]:focus {
   background-color: #fffcdc;
@@ -55,7 +55,7 @@ input[type="submit"] {
   background-color: rgba(191,102,63, 1.0);
 }
 input[type="submit"]:disabled {
-    background-color: rgba(191,102,63, 0.3);
+  background-color: rgba(191,102,63, 0.3);
 }
 /*Diagnostic CSS*/
 /**
@@ -66,18 +66,18 @@ input[type="submit"]:disabled {
 body.g {
   position: relative;
 }
-body.g::after{
- background: url('data:image/svg+xml;utf8,<svg height="22" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(255, 0, 0, 0.3)" /></svg>') repeat top left;
- content: "";
- display: block;
- pointer-events: none;
- top: 0;
- bottom: 0;
- left: 0;
- right: 0;
- z-index: 9999;
- position: absolute;
+body.g::after {
+  background: url('data:image/svg+xml;utf8,<svg height="22" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(255, 0, 0, 0.3)" /></svg>') repeat top left;
+  content: "";
+  display: block;
+  pointer-events: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  position: absolute;
 }
-body.g:active::after{
-  display:none;
+body.g:active::after {
+  display: none;
 }
