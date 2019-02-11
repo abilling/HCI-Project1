@@ -11,8 +11,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 https://www.modularscale.com/?18&px&1.618
 */
 html {
-  background: #eb4646;
-  color: #f59f8b;
+  background: #000099;
+  color: #ccffff;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.125em; /* 18/16= 1.125 */
   line-height: 1.2222em; /* 22/18= 1.222em */
@@ -45,14 +45,14 @@ input {
 }
 input[type="tel"] {
   margin-bottom: 0.61111111em; /* 11/18 = 0.61111111em */
-  background-color: rgba(191,102,63, 1.0);
+  background-color: rgba(51, 102, 255, 1.0);
 }
 input[type="tel"]:focus {
   background-color: #fffcdc;
 }
 input[type="submit"] {
   margin-bottom: 0.61111111em; /* 11/18 = 0.61111111em */
-  background-color: rgba(191,102,63, 1.0);
+  background-color: rgba(255, 255, 255, 1.0);
 }
 input[type="submit"]:disabled {
   background-color: rgba(191,102,63, 0.3);
