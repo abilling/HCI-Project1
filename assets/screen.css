@@ -57,8 +57,15 @@ input[type="submit"]:disabled {
   background-color: rgba(191,102,63, 0.3);
   color: #222;
 }
-@media screen and (min-width: 980px){
-
+@media screen and (min-width: 500px) {
+  body {
+    padding-left: 1.2222em;  /* 22/18= 1.222em */
+    padding-right: 1.2222em;  /* 22/18= 1.222em */
+  }
+  p {
+    font-size: 1em; /* 18px/18px*/
+    line-height: 1.5em; /*27px/28px*/
+  }
 }
 /*Diagnostic CSS*/
 /**

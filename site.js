@@ -39,5 +39,4 @@ var submission= document.querySelector('#signup');
         submission.setAttribute('disabled','disabled');
       }
     }
-  ;
 }());
