@@ -31,8 +31,8 @@ var submission= document.querySelector('#signup');
       console.log('number is valid US number.');
       submission.removeAttribute('disabled');
     }
-      else{
-        submission.setAttribute('disabled','disabled');
-      }
+    else {
+      submission.setAttribute('disabled', 'disabled');
+    }
   });
 }());
