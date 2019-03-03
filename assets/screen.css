@@ -13,7 +13,7 @@ https://www.modularscale.com/?18&px&1.618
 html {
   background: #000099;
   color: #ccffff;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Trebucket MS", Helvetica, sans-serif;
   font-size: 1.125em; /* 18/16= 1.125 */
   line-height: 1.2222em; /* 22/18= 1.222em */
   padding: 1.2222em; /* 22/18= 1.222em */
@@ -50,11 +50,15 @@ input[type="tel"]:focus {
   background-color: #fffcdc;
 }
 input[type="submit"] {
-  margin-bottom: 0.61111111em; /* 11/18 = 0.61111111em */
   background-color: rgba(255, 255, 255, 1.0);
+  color: #222;
 }
 input[type="submit"]:disabled {
   background-color: rgba(191,102,63, 0.3);
+  color: #222;
+}
+@media screen and (min-width: 980px){
+
 }
 /*Diagnostic CSS*/
 /**

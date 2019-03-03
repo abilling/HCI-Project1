@@ -1,8 +1,7 @@
 "use strict";
 var tel_input = document.querySelector('#telephone');
 var submission= document.querySelector('#signup');
-var best_number = clean_number.replace(/^1/, '');
-var clean_number = this.value.replace(/\D/g, '');
+
 
 (function(){
   // needed to see what kind of browser it is
@@ -14,7 +13,7 @@ var clean_number = this.value.replace(/\D/g, '');
     // console.log('DOM has loaded.');
   // var heading_text = document.querySelector('#content h1').innerText;
     // console.log('the heading text is:', heading_text);
-    submission.setAttribute('disabled');
+    submission.setAttribute('disabled', 'disabled');
   });
   tel_input.addEventListener('focus', function(){
     console.log('Person has focused on the telephone input box');
@@ -25,6 +24,9 @@ var clean_number = this.value.replace(/\D/g, '');
   tel_input.addEventListener('keyup', function(){
     // checking for non-number symbols
     var clean_number = this.value.replace(/\D/g, '');
+    if (clean_number !== 'undefined'){
+      var clean_number = this.value.replace(/\D/g, '');
+    }
     // after replacing non numbers, move to replace 1's
     var best_number = clean_number.replace(/^1/, '');
     // checking for 10 digits
@@ -33,5 +35,9 @@ var clean_number = this.value.replace(/\D/g, '');
       console.log('number is valid US number.');
       submission.removeAttribute('disabled');
     }
-  });
+      else{
+        submission.setAttribute('disabled','disabled');
+      }
+    }
+  ;
 }());
