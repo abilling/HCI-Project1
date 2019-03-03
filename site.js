@@ -23,8 +23,14 @@ var clean_number = this.value.replace(/\D/g, '');
     console.log('Person has unfocused on the telephone input box');
   });
   tel_input.addEventListener('keyup', function(){
+    // checking for non-number symbols
+    var clean_number = this.value.replace(/\D/g, '');
+    // after replacing non numbers, move to replace 1's
+    var best_number = clean_number.replace(/^1/, '');
+    // checking for 10 digits
     console.log('The value of #telephone is', this.value);
     if (best_number.length === 10) {
+      console.log('number is valid US number.');
       submission.removeAttribute('disabled');
     }
   });
