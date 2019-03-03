@@ -2,7 +2,6 @@
 var tel_input = document.querySelector('#telephone');
 var submission= document.querySelector('#signup');
 
-
 (function(){
   // needed to see what kind of browser it is
   if(!('querySelector' in document && 'addEventListener' in document)){
@@ -24,9 +23,6 @@ var submission= document.querySelector('#signup');
   tel_input.addEventListener('keyup', function(){
     // checking for non-number symbols
     var clean_number = this.value.replace(/\D/g, '');
-    if (clean_number !== 'undefined'){
-      var clean_number = this.value.replace(/\D/g, '');
-    }
     // after replacing non numbers, move to replace 1's
     var best_number = clean_number.replace(/^1/, '');
     // checking for 10 digits
@@ -38,5 +34,5 @@ var submission= document.querySelector('#signup');
       else{
         submission.setAttribute('disabled','disabled');
       }
-    }
+  });
 }());
