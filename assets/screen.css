@@ -40,11 +40,13 @@ input {
   line-height: 1;
   border: 0;
   outline: 0;
+  length: 50%;
   width: 100%;
 }
 input[type="tel"] {
   margin-bottom: 0.61111111em; /* 11/18 = 0.61111111em */
   background-color: rgba(51, 102, 255, 1.0);
+  width: 100%;
 }
 input[type="tel"]:focus {
   background-color: #fffcdc;
@@ -52,6 +54,7 @@ input[type="tel"]:focus {
 input[type="submit"] {
   background-color: rgba(255, 255, 255, 1.0);
   color: #222;
+  width: 100%;
 }
 input[type="submit"]:disabled {
   background-color: rgba(191,102,63, 0.3);
